@@ -2,17 +2,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] myArray = {"ala", "iwona", "agnieszka", "martyna"};
-        String[] myArray2 = new String[myArray.length];
 
+        String[] myArray = {"ala", "iwona", "agnieszka", "martyna", "ALA"};
+        String[] myArray2 = new String[myArray.length];
+        String[] myArray3 = new String[myArray2.length];
+        System.out.println(myArray[0] + " " + myArray[1] + " " + myArray[2] + " " + myArray[3] + " " + myArray[4]);
 
         for (int i = 0; i < myArray2.length; i++) {
 
             myArray2[i] = myArray[i].substring(0, 1).toUpperCase() + myArray[i].substring(1);
         }
 
-        System.out.println(myArray[0] + " " + myArray[1] + " " + myArray[2] + " " + myArray[3]);
-        System.out.println(myArray2[0] + " " + myArray2[1] + " " + myArray2[2] + " " + myArray2[3]);
+        for (int i = 0; i < myArray3.length; i++) {
+
+            myArray3[i] = myArray2[i].substring(0, 1) + myArray2[i].substring(1).toLowerCase();
+
+        }
+        System.out.println(myArray3[0] + " " + myArray3[1] + " " + myArray3[2] + " " + myArray3[3] + " " + myArray3[4]);
     }
 }
 
