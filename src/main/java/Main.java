@@ -94,7 +94,6 @@ public class Main {
 
         int men = 0;
         int women = 0;
-        int index = 0;
         String lastLetter = null;
 
 
