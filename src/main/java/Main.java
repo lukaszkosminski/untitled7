@@ -127,17 +127,14 @@ public class Main {
         userTable[1] = user2;
         userTable[2] = user3;
 
-        // System.out.println(userTable[0]);
 
         for (int i = 0; i < userTable.length; i++) {
 
             if (userTable[i].getAge() >= 18) {
 
-                System.out.println( userTable[i]);
+                System.out.println(userTable[i]);
             }
-
         }
-
     }
 }
 
