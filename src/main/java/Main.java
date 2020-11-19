@@ -1,11 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-         ex1();
-         ex2();
-         ex3();
-         ex4();
-         ex5();
+        ex1();
+        ex2();
+        ex3();
+        ex4();
+        ex5();
+        ex6();
     }
 
 
@@ -114,12 +115,28 @@ public class Main {
         System.out.println("male :" + men + "," + "female :" + women);
         System.out.println("----------------------------------");
     }
-    public static void ex6(){
-        
 
+    public static void ex6() {
 
+        User user1 = new User("Jan", 18);
+        User user2 = new User("Michal", 23);
+        User user3 = new User("Adam", 12);
 
+        User[] userTable = new User[3];
+        userTable[0] = user1;
+        userTable[1] = user2;
+        userTable[2] = user3;
 
+        // System.out.println(userTable[0]);
+
+        for (int i = 0; i < userTable.length; i++) {
+
+            if (userTable[i].getAge() >= 18) {
+
+                System.out.println( userTable[i]);
+            }
+
+        }
 
     }
 }
