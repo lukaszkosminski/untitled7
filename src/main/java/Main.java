@@ -132,7 +132,7 @@ public class Main {
 
     public static void ex6() {
 
-        User[] userTable = {new User("Jan", 18), new User("Michal", 23), new User("Adam", 12)};
+        User[] userTable = {new User("Janek", 18), new User("Michal", 23), new User("Adam", 12)};
 
 
         for (int i = 0; i < userTable.length; i++) {
